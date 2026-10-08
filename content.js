@@ -12,8 +12,8 @@ window.PORTFOLIO = {
     "I build enterprise features end to end — from SQL schema and APIs to the interface — with a focus on performance at scale.",
   location: "Gurgaon, Haryana, India",
   email: "akampreetsandhu03@gmail.com",
-  resumeUrl: "", // e.g. "assets/resume.pdf" — leave empty to hide the button
-  photo: "", // e.g. "assets/photo.jpg" — leave empty to show your initials
+  resumeUrl: "assets/Akampreet_Singh_Sandhu_Resume.pdf", // e.g. "assets/resume.pdf" — leave empty to hide the button
+  photo: "assets/photo.jpg", // e.g. "assets/photo.jpg" — leave empty to show your initials
 
   socials: [
     { label: "LinkedIn", url: "https://www.linkedin.com/in/akampreet-singh-089150192" },
