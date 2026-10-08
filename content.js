@@ -2,96 +2,89 @@
  * ============================================================
  *  EDIT THIS FILE — all of your portfolio content lives here.
  * ============================================================
- *  Replace every placeholder below with your own details.
  *  Delete any item you don't need; empty sections are hidden
  *  automatically.
  */
 window.PORTFOLIO = {
-  name: "Your Name",
-  role: "Software Engineer",
+  name: "Akampreet Singh Sandhu",
+  role: "Full-Stack Engineer — Backend Systems & API Design",
   tagline:
-    "I build reliable, user-focused products and love turning complex problems into simple solutions.",
-  location: "City, Country",
-  email: "you@example.com",
+    "I build enterprise features end to end — from SQL schema and APIs to the interface — with a focus on performance at scale.",
+  location: "Gurgaon, Haryana, India",
+  email: "akampreetsandhu03@gmail.com",
   resumeUrl: "", // e.g. "assets/resume.pdf" — leave empty to hide the button
   photo: "", // e.g. "assets/photo.jpg" — leave empty to show your initials
 
   socials: [
-    { label: "GitHub", url: "https://github.com/your-username" },
-    { label: "LinkedIn", url: "https://www.linkedin.com/in/your-profile" },
+    { label: "LinkedIn", url: "https://www.linkedin.com/in/akampreet-singh-089150192" },
+    // { label: "GitHub", url: "https://github.com/your-username" },
   ],
 
   about: [
-    "Write two or three short paragraphs about yourself: what you do, what you care about, and what kind of work you're looking for.",
-    "Mention your background, a standout strength, and what makes you different from other candidates.",
+    "I’m a full-stack engineer at Publicis, where I work on Starscape, a media planning and execution platform handling large volumes of transactional data. I like owning a whole slice of a feature — the database, the API, and the screen — because it lets me solve a problem wherever it actually lives instead of handing it off at a layer boundary.",
+    "Most of my work sits on the backend: tuning SQL Server, designing modular APIs, and keeping high-volume modules fast and maintainable. I care about writing things the next engineer can follow without me in the room — a habit that comes partly from running a tuition centre on the side, where if you can’t explain something simply, you don’t really understand it yet.",
+    "I graduated in Software Engineering from Delhi Technological University in 2024 and am now looking for remote roles where I can own more and keep growing.",
   ],
 
-  // Headline numbers shown under the About section. Delete if you don't want them.
   highlights: [
-    { value: "5+", label: "Years of experience" },
-    { value: "20+", label: "Projects shipped" },
-    { value: "3", label: "Awards" },
+    { value: "2+ yrs", label: "Building production systems" },
+    { value: "Up to 70%", label: "Query execution time cut" },
+    { value: "Millions", label: "Of records managed with partitioning & archival" },
+    { value: "B.Tech", label: "Software Engineering, DTU" },
   ],
 
   skills: [
-    { group: "Languages", items: ["JavaScript", "TypeScript", "Python", "SQL"] },
-    { group: "Frameworks", items: ["React", "Node.js", "Django"] },
-    { group: "Tools & Cloud", items: ["Git", "Docker", "AWS", "CI/CD"] },
-    { group: "Soft skills", items: ["Leadership", "Communication", "Mentoring"] },
+    { group: "Languages", items: ["C#", "C++", "JavaScript"] },
+    { group: "Backend & APIs", items: ["ASP.NET", "Web API", "REST API design"] },
+    { group: "Frontend", items: ["AngularJS", "HTML5", "CSS3", "Bootstrap"] },
+    { group: "Databases", items: ["SQL Server", "T-SQL", "MySQL", "MongoDB"] },
+    {
+      group: "Performance & data",
+      items: ["Query optimization", "Indexing", "Table partitioning", "Data archival", "Stored procedures"],
+    },
+    { group: "Cloud & tooling", items: ["Azure Blob Storage", "Git", "CI/CD", "Visual Studio"] },
+    {
+      group: "Fundamentals",
+      items: ["Data Structures & Algorithms", "OOP", "System Design", "DBMS"],
+    },
   ],
 
   experience: [
     {
-      title: "Job Title",
-      company: "Company Name",
-      period: "2023 — Present",
-      location: "City / Remote",
+      title: "Associate L1, General Technology",
+      company: "Publicis Resources",
+      period: "May 2024 — Present",
+      location: "",
       achievements: [
-        "Lead with impact and numbers: e.g. Reduced page load time by 40% by redesigning the caching layer.",
-        "Led a team of 4 to deliver X, increasing revenue / users / efficiency by Y%.",
-        "Received the Z award for outstanding contribution.",
-      ],
-    },
-    {
-      title: "Previous Job Title",
-      company: "Previous Company",
-      period: "2020 — 2023",
-      location: "City",
-      achievements: [
-        "Built and launched a feature used by N customers.",
-        "Automated a manual process, saving the team 10 hours per week.",
+        "Owned the Media Placement feature end to end: SQL schema and taxonomy, stored procedures, C# API/manager layers, AngularJS screens across Planning and Execution, and client-facing PDF templates wired into a metadata-driven report engine.",
+        "Diagnosed and fixed a production slowdown on a core screen by inlining a scalar UDF’s logic that was blocking parallelism and index seeks — part of query work cutting execution time up to 70% on large datasets.",
+        "Migrated attachment storage from an on-prem file server to Azure Blob Storage across five modules (Plan, Deal, Deviation, Credit Note, Client Invoice).",
+        "Built an automated vendor-invoice reminder system (SQL Agent jobs + Database Mail) that queues orders, resolves recipients by priority rules, and sends scheduled reminders — cutting manual follow-up.",
+        "Implemented role-based navigation and Quick Search features, improving record-access speed and reducing navigation time significantly.",
       ],
     },
   ],
 
-  projects: [
-    {
-      name: "Project One",
-      description: "One or two sentences about what it does and why it matters.",
-      tags: ["React", "Node.js"],
-      link: "https://github.com/your-username/project-one",
-    },
-    {
-      name: "Project Two",
-      description: "Another project, side hustle, or open-source contribution.",
-      tags: ["Python", "Data"],
-      link: "",
-    },
-  ],
+  projects: [],
 
   education: [
     {
-      degree: "B.Sc. in Computer Science",
-      school: "University Name",
-      period: "2016 — 2020",
-      note: "Optional: honours, GPA, relevant coursework",
+      degree: "B.Tech, Software Engineering",
+      school: "Delhi Technological University (DTU)",
+      period: "2020 — 2024",
+      highlights: [
+        "JEE Main 2020 — All India Rank 6922 (top percentile nationwide)",
+        "Joint Cultural Secretary, Engifest Cultural Council — led a 1,000+ volunteer team across 100+ colleges",
+      ],
     },
   ],
 
   interests: [
-    { emoji: "📷", name: "Photography", description: "Street and travel photography." },
-    { emoji: "🏃", name: "Running", description: "Training for my next half marathon." },
-    { emoji: "📚", name: "Reading", description: "Sci-fi, design and psychology books." },
-    { emoji: "🎸", name: "Music", description: "Playing guitar on weekends." },
+    { emoji: "⚽", name: "Football", description: "Represented at SGFI National and State tournaments." },
+    {
+      emoji: "🎮",
+      name: "Gaming",
+      description: "FIFA, GTA, God of War and Ghost of Tsushima on PS5.",
+    },
   ],
 };

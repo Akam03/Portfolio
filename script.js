@@ -33,7 +33,7 @@
     .toUpperCase();
 
   // Head + hero
-  document.title = `${d.name} — ${d.role}`;
+  document.title = `${d.name} | ${d.role}`;
   $("logo").textContent = initials;
   $("hero-name").textContent = d.name;
   $("hero-role").textContent = d.role;
@@ -114,6 +114,11 @@
     const card = el("div", "card");
     card.append(el("h4", null, e.degree), el("p", "muted", `${e.school} · ${e.period}`));
     if (e.note) card.append(el("p", null, e.note));
+    if (e.highlights?.length) {
+      const ul = el("ul", "achievements");
+      e.highlights.forEach((h) => ul.append(el("li", null, h)));
+      card.append(ul);
+    }
     $("education-grid").append(card);
   });
 
