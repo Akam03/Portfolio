@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio</title>
+    <meta name="description" content="Personal portfolio — skills, experience, projects and interests." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      // Apply saved theme before paint to avoid a flash.
+      try {
+        const t = localStorage.getItem("theme");
+        if (t) document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container nav-inner">
+        <a href="#top" class="logo" id="logo"></a>
+        <nav>
+          <ul class="nav-links" id="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#interests">Interests</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="nav-actions">
+          <button class="icon-btn" id="theme-toggle" aria-label="Toggle dark mode">◐</button>
+          <button class="icon-btn menu-btn" id="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero container">
+        <div class="hero-text">
+          <p class="eyebrow" id="hero-location"></p>
+          <h1>Hi, I'm <span class="accent" id="hero-name"></span></h1>
+          <h2 id="hero-role"></h2>
+          <p class="lead" id="hero-tagline"></p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary">Get in touch</a>
+            <a href="#" class="btn btn-ghost" id="resume-btn" target="_blank" rel="noopener">Download résumé</a>
+          </div>
+          <ul class="socials" id="hero-socials"></ul>
+        </div>
+        <div class="hero-photo" id="hero-photo"></div>
+      </section>
+
+      <section id="about" class="section container">
+        <h3 class="section-title">About me</h3>
+        <div class="about-text" id="about-text"></div>
+        <div class="highlights" id="highlights"></div>
+      </section>
+
+      <section id="skills" class="section container">
+        <h3 class="section-title">Skills</h3>
+        <div class="skills-grid" id="skills-grid"></div>
+      </section>
+
+      <section id="experience" class="section container">
+        <h3 class="section-title">Experience &amp; achievements</h3>
+        <ol class="timeline" id="timeline"></ol>
+      </section>
+
+      <section id="projects" class="section container">
+        <h3 class="section-title">Projects</h3>
+        <div class="cards" id="projects-grid"></div>
+      </section>
+
+      <section id="education" class="section container">
+        <h3 class="section-title">Education</h3>
+        <div class="cards" id="education-grid"></div>
+      </section>
+
+      <section id="interests" class="section container">
+        <h3 class="section-title">Beyond work</h3>
+        <div class="cards interests" id="interests-grid"></div>
+      </section>
+
+      <section id="contact" class="section container contact">
+        <h3 class="section-title">Let's connect</h3>
+        <p class="lead">I'm always open to new opportunities, collaborations, or just a friendly chat.</p>
+        <a class="btn btn-primary btn-lg" id="contact-email"></a>
+        <ul class="socials center" id="contact-socials"></ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container" id="footer-text"></div>
+    </footer>
+
+    <script src="content.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
