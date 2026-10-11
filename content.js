@@ -92,5 +92,11 @@ window.PORTFOLIO = {
   // and it becomes a playable player on the page. Leave the list empty to hide it.
   // Example:
   // { title: "Coding focus", description: "What I play while debugging SQL.", url: "https://open.spotify.com/playlist/..." },
-  playlists: [],
+  playlists: [
+    {
+      title: "The City",
+      description: "",
+      url: "https://music.apple.com/in/playlist/the-city/pl.u-76oNlPytvkWbNpB",
+    },
+  ],
 };
