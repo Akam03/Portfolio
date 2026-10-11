@@ -73,18 +73,18 @@ window.PORTFOLIO = {
       school: "Delhi Technological University (DTU)",
       period: "2020 — 2024",
       highlights: [
-        "JEE Main 2020 — All India Rank 6922 (top percentile nationwide)",
+        "JEE Main 2020 — All India Rank 6922 (99.39 percentile nationwide)",
         "Joint Cultural Secretary, Engifest Cultural Council — led a 1,000+ volunteer team across 100+ colleges",
       ],
     },
   ],
 
   interests: [
-    { emoji: "⚽", name: "Football", description: "Represented at SGFI National and State tournaments." },
+    { emoji: "⚽", name: "Football", description: "Represented at SGFI Nationals and 3 State tournaments." },
     {
       emoji: "🎮",
       name: "Gaming",
-      description: "FIFA, GTA, God of War and Ghost of Tsushima on PS5.",
+      description: "FIFA (EAFC), GTA, God of War and Ghost of Tsushima are the kind of gaves I love to play. Currently playing FC 27 right now.",
     },
   ],
 };
