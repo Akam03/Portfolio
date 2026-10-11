@@ -84,7 +84,13 @@ window.PORTFOLIO = {
     {
       emoji: "🎮",
       name: "Gaming",
-      description: "FIFA (EAFC), GTA, God of War and Ghost of Tsushima are the kind of gaves I love to play. Currently playing FC 27 right now.",
+      description: "FIFA (EAFC), GTA, God of War and Ghost of Tsushima are the kind of games I love to play. Currently playing FC 27 right now.",
     },
   ],
+
+  // Music: paste a share link from Spotify, Apple Music or YouTube / YouTube Music
+  // and it becomes a playable player on the page. Leave the list empty to hide it.
+  // Example:
+  // { title: "Coding focus", description: "What I play while debugging SQL.", url: "https://open.spotify.com/playlist/..." },
+  playlists: [],
 };

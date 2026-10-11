@@ -130,6 +130,47 @@
     $("interests-grid").append(card);
   });
 
+  // Playlists: turn a normal share link into an embedded player.
+  const toEmbed = (url) => {
+    let u;
+    try {
+      u = new URL(url);
+    } catch (e) {
+      return null;
+    }
+    const host = u.hostname.replace(/^www\./, "");
+    if (host === "open.spotify.com") {
+      const m = u.pathname.match(/(playlist|album|track|artist|episode|show)\/([A-Za-z0-9]+)/);
+      if (m) return { src: `https://open.spotify.com/embed/${m[1]}/${m[2]}`, cls: m[1] === "track" ? "spotify-track" : "spotify" };
+    }
+    if (host === "music.apple.com") {
+      return { src: `https://embed.music.apple.com${u.pathname}${u.search}`, cls: "apple" };
+    }
+    if (host === "youtube.com" || host === "music.youtube.com" || host === "m.youtube.com") {
+      const list = u.searchParams.get("list");
+      if (list) return { src: `https://www.youtube-nocookie.com/embed/videoseries?list=${encodeURIComponent(list)}`, cls: "video" };
+    }
+    return null;
+  };
+
+  if (!d.playlists?.length) $("playlists").hidden = true;
+  (d.playlists || []).forEach((p) => {
+    const card = el("div", "card playlist");
+    if (p.title) card.append(el("h4", null, p.title));
+    if (p.description) card.append(el("p", "muted", p.description));
+    const embed = toEmbed(p.url);
+    if (embed) {
+      const frame = el("iframe", `player ${embed.cls}`);
+      frame.src = embed.src;
+      frame.title = p.title || "Playlist";
+      frame.loading = "lazy";
+      frame.allow = "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture";
+      card.append(frame);
+    }
+    card.append(link(p.url, "Open playlist →", "card-link"));
+    $("playlist-grid").append(card);
+  });
+
   // Contact + footer
   const mail = $("contact-email");
   mail.href = `mailto:${d.email}`;

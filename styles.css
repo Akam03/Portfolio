@@ -391,6 +391,56 @@ a {
   padding: 3px 10px;
 }
 
+.playlists {
+  margin-top: 40px;
+}
+
+.sub-title {
+  font-size: 1.2rem;
+  margin: 0 0 20px;
+}
+
+.playlist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+@media (max-width: 400px) {
+  .playlist-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.playlist {
+  display: flex;
+  flex-direction: column;
+}
+
+.player {
+  width: 100%;
+  border: 0;
+  border-radius: 12px;
+  margin: 4px 0 14px;
+  background: var(--accent-soft);
+}
+
+.player.spotify {
+  height: 352px;
+}
+
+.player.spotify-track {
+  height: 152px;
+}
+
+.player.apple {
+  height: 450px;
+}
+
+.player.video {
+  aspect-ratio: 16 / 9;
+}
+
 .interest .emoji {
   font-size: 2rem;
   display: block;
